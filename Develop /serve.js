@@ -54,3 +54,17 @@ app.get('/api/users', async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+// {
+//   "email": "rudra.gupta_cs22@gla.ac.in",
+//   "name": "rudra gupta",
+//   "rollNo": "2215001501",
+//   "accessCode": "CNneGT",
+//   "clientID": "4fdbb0ad-2617-4a10-bc1b-077c793036cf",
+//   "clientSecret": "efZQWkVsRfQuqaYh"
+// }
+// {
+//   "token_type": "Bearer",
+//   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ0OTU0Njg0LCJpYXQiOjE3NDQ5NTQzODQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjRmZGJiMGFkLTI2MTctNGExMC1iYzFiLTA3N2M3OTMwMzZjZiIsInN1YiI6InJ1ZHJhLmd1cHRhX2NzMjJAZ2xhLmFjLmluIn0sImVtYWlsIjoicnVkcmEuZ3VwdGFfY3MyMkBnbGEuYWMuaW4iLCJuYW1lIjoicnVkcmEgZ3VwdGEiLCJyb2xsTm8iOiIyMjE1MDAxNTAxIiwiYWNjZXNzQ29kZSI6IkNObmVHVCIsImNsaWVudElEIjoiNGZkYmIwYWQtMjYxNy00YTEwLWJjMWItMDc3Yzc5MzAzNmNmIiwiY2xpZW50U2VjcmV0IjoiZWZaUVdrVnNSZlF1cWFZaCJ9.Ce0qvki2oiqQacSaHGBaBvIkfIV81m6tHZLXoEPQUxg",
+//   "expires_in": 1744954684
+// }
