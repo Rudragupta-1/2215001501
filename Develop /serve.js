@@ -22,6 +22,35 @@ app.get('/api/users', async (req, res) => {
   }
 });
 
+app.get('/api/users', async (req, res) => {
+  try {
+    const response = await axios.get('http://20.244.56.144/evaluation-service/users/:userid/posts', {
+      headers: {
+        Authorization: `Bearer ${BEARER_TOKEN}`
+      }
+    });
+
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error calling third-party API:', error.message);
+    res.status(500).json({ error: 'Failed to fetch users from third-party API' });
+  }
+});
+
+app.get('/api/users', async (req, res) => {
+  try {
+    const response = await axios.get('http://20.244.56.144/evaluation-service/posts/:postid/comments', {
+      headers: {
+        Authorization: `Bearer ${BEARER_TOKEN}`
+      }
+    });
+
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error calling third-party API:', error.message);
+    res.status(500).json({ error: 'Failed to fetch users from third-party API' });
+  }
+});
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
